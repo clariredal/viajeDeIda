@@ -1,0 +1,10 @@
+.inicio__fila{
+    display: flex;
+    justify-content: center;
+    &__introduccion{
+        width: 25rem;
+        p{
+            font-size: 140%;
+        }
+    }
+}

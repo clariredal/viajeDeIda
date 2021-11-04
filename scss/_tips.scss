@@ -1,0 +1,28 @@
+.tips__section{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.25rem;
+    &__div{
+        height: auto;
+        background-color: $color-div;
+        text-align: center;
+        border-radius: 5%;
+        margin: 0.3125rem;
+    }
+}
+
+
+$tips:(
+    1: #F6D7A7,
+    2: #C8E3D4,
+    3: #FF5DA2,
+    4: #99DDCC,
+    5: #87AAAA,
+    6: #F4A442
+);
+
+@each $tip,$color in $tips{
+    .tip-#{$tip}{
+        background-color: $color;
+    }
+}

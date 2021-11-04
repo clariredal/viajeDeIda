@@ -1,0 +1,13 @@
+$color-header:#BB8082;
+$color-footer: #046582;
+$color-main: #F2EDD7;
+$color-h1: #fc673a;
+$color-pytd: #8c013e;
+$color-h2: #845460;
+$color-div: #EAD3CB;
+$font-body: 'Heebo', sans-serif;;
+
+@mixin sizes($width,$height){
+    width: $width;
+    height: $height;
+}

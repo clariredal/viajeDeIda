@@ -1,0 +1,15 @@
+h1{
+    color: $color-h1;
+    font-size: 250%;
+    letter-spacing: 0,125rem;
+    text-transform: uppercase;
+}
+h2{
+    color: $color-h2;
+    font-size: 170%;
+}
+main{
+    padding: 6.25rem 2.5rem;
+    height: auto;
+    background-color: $color-main;
+}

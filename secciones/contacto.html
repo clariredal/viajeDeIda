@@ -25,18 +25,18 @@
 <body>
         <!-- HEADER -->
         <header class="header">
-            <nav class="navbar header__navbar navbar-expand-lg navbar-dark">   
+            <nav class="navbar header__navbar navbar-expand-md navbar-dark">   
                 <div class="container-fluid header__contenedor">
-                    <a class="navbar-brand" href="../index2.html"><img src="../multimedia/LOGO.png" class="header__contenedor__logo" alt="Logo"></a>
+                    <a class="navbar-brand" href="../index.html"><img src="../multimedia/LOGO.png" class="header__contenedor__logo" alt="Logo"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse header__contenedor__menu" id="navbarSupportedContent">
                         <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                            <li class="header__contenedor__menu__item"><a class="nav-link active" aria-current="page" href="../index2.html">INICIO</a></li>
+                            <li class="header__contenedor__menu__item"><a class="nav-link active" aria-current="page" href="../index.html">INICIO</a></li>
                             <li class="header__contenedor__menu__item"><a class="nav-link" href="destinos-argentinos.html">DESTINOS</a></li>
                             <li class="header__contenedor__menu__item"><a class="nav-link" href="galeria.html">GALERIA</a></li>
-                            <li class="header__contenedor__menu__item"><a class="nav-link" href="tips.html">TIPS</a></li>
+                            <li class="header__contenedor__menu__item tips__fontstyle"><a class="nav-link" href="tips.html">TIPS</a></li>
                             <li class="header__contenedor__menu__item"><a class="nav-link" href="contacto.html">CONTACTO</a></li>
                         </ul>
                     </div>
@@ -47,8 +47,18 @@
 
         <!-- MAIN -->
     <main class="contacto">
-        <form action="" method="GET">       
-        <h1 class="contacto__titulo">Contactanos</h1>
+        <form action="">
+            <h1 class="contacto__titulo">Contactanos</h1>
+            <input class="contacto__input" type="text" name="Nombre" placeholder="Ingrese su nombre">
+            <input class="contacto__input" type="text" name="Apellido" placeholder="Ingrese su apellido">
+            <input class="contacto__input" type="email" name="E-mail" placeholder="Ingrese un e-mail">
+            <textarea class="contacto__textarea" placeholder="Dejá la consulta que quieras hacernos!"></textarea>
+            <input type="submit" value="ENVIAR" class="contacto__boton">
+
+        </form>
+
+
+        <!-- <form action="" method="GET">       
         
         <div>
             <label for="viajo">Viajo...</label>
@@ -75,7 +85,7 @@
 
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpiar">
-            </form>
+            </form> -->
     </main>
 
 

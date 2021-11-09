@@ -28,7 +28,7 @@ COLOrDivtips  #EAD3CB
 /*ESTILOS GENERALES*/
 /* header */
 .header__navbar{
-    background-color: ;
+    background-color: #BB8082;
     height: 23vh;
     width: 100%;
     font-size: 150%;
@@ -295,10 +295,10 @@ font-size: 100%;
     width: 100vh;
 }
 }
-@media screen (min-width:800px) {
+@media screen and (min-width:800px) {
     .inicio__fila__introduccion{
-        margin-top: 1.25rem !important;
-        width: 100% !important;
+    margin-top: 1.25rem;
+    width:100%;
     }
     .inicio__fila__img{
     max-width: 100%;
@@ -313,9 +313,3 @@ font-size: 100%;
         overflow:hidden !important;
     }
 }
-/* @media only screen and (max-width:440px){
-    .gridBodyIndex{
-        grid-template-columns: 1fr;
-        background-color: #EAD3CB;;
-    }
-}  */

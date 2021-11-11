@@ -123,19 +123,31 @@ margin: 0 0.625rem;
     margin: 0 0.625rem;
 }
 
-/*DESTINOS*/
-.destinos__table{
-    padding: 1.25rem;
-    font-size: 120%;
+/* DESTINOS */
+.destinos__lugares p{
+    line-height: 30px;
+    width: 85%;
 }
-td{
-    color:#8c013e;
-    font-size: 120%;
+.destinos__h2{
+    margin-top: 40px;
+    letter-spacing: 2px;
+}
+.destinos{
+    margin-left: 20px;
 }
 
 /*GALERIA*/
 
 .galeria__carousel{
+    width: 37.5rem;
+    height: 28.125rem;
+    display: block;
+}
+.galeria__carousel2{
+    width: 37.5rem;
+    height: 28.125rem;
+}
+.galeria__carousel3{
     width: 37.5rem;
     height: 28.125rem;
 }
@@ -156,14 +168,8 @@ td{
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
-.galeria__fotos{
-    padding: 0.625rem;
-    width: 31.25rem;
-    height: 21.25rem;
-    transition: 3s;
-}
-.galeria__fotos:hover{
-transform: scale(1.3);
+.carousel__p{
+    margin-top: 30px;
 }
 
 /*TIPS*/
@@ -179,6 +185,9 @@ transform: scale(1.3);
     border-radius: 5%;
     margin: 0.3125rem;
     padding: 0.625rem;
+}
+.tips__section__div p{
+    line-height: 25px;
 }
 .tip-1 {
 background-color: #F6D7A7; }
@@ -296,19 +305,13 @@ font-size: 100%;
 }
 @media screen and (max-width:800px) {
     .inicio__fila__introduccion{
-    margin-top: 1.25rem;
-    width:100%;
+        margin-top: 1.25rem;
+        width:100%;
     }
     .inicio__fila__img{
-    width: 100%;
+        width: 100%;
     }
-}
-
-@media screen and (max-width:768px){
-    .header__contenedor__menu{
-        overflow: visible !important;
-    }
-    .navbar-toggler{
-        overflow:hidden !important;
+    .galeria__fotos{
+        transition: none;
     }
 }

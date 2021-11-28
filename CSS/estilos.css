@@ -6,12 +6,7 @@
 
 html{
 font-size: 62,5%;
-/* 1rem pase a valer a 10px. Por defecto el navegador aplica 16px */
 }
-
-/* FONTS */
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap');
 
 
 /* PALETA
@@ -29,10 +24,11 @@ COLORbotones          #013b52
 /* header */
 .header__navbar{
     background-color: #0378A6;
-    height: 23vh;
+    height: 16vh;
     width: 100%;
     font-size: 150%;
     padding: 0% 0.625rem;
+    position: fixed;
 }
 .header__contenedor__menu__item{
     background-color: #0378A6;
@@ -42,42 +38,60 @@ COLORbotones          #013b52
     width: 5rem;
     height: 5rem;
 }
-header{
+.header__p{
     width: 100%;
+    background: url(../multimedia/pexels-sesinando-3158519-min.jpg);
+    height: 37.5rem;
+    background-size: cover;
+    background-position: start center;
+
 }
 .tips__fontstyle{
     font-style: italic;
 }
 
+.header__p p{
+    font-family: 'Lobster', cursive;
+    color: rgb(230, 191, 21);
+    padding-top: 20%;
+    font-size: 6.25rem;
+    text-align: center;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px black;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
 
 /* body */
 p{
-    font-size: 120%;
+    font-size: 1.5625rem;
     line-height: 1;
     color: #8c013e;
 }
 body{
-    font-family: 'Heebo', sans-serif;;
-    position: relative;
+    /* position: relative; */
+    font-style: bold;
 }
 
 /* main */
 h1{
     color: #D9AA52;
-    font-size: 2.5rem;
+    font-size: 3.75rem;
     letter-spacing: 2px;
     text-transform: uppercase;
     width: 100%;
 }
 h2{
     color:#845460;
-    font-size: 170%;
+    font-size: 2.5rem;
     font-style: italic;
 }
 main{
     padding: 6.25rem 2.5rem;
     height: auto;
     background-color: #F2F2F2;
+    font-family: 'Oswald', sans-serif;
 }
 
 /* footer */
@@ -92,6 +106,7 @@ background-color: #0378A6;
 }
 .footer__copyright p{
     color: #fc673a;
+    font-size: 120%;
 }
 
 
@@ -100,7 +115,7 @@ background-color: #0378A6;
  /* INDEX */
 
 .inicio__fila__introduccion p{
-    font-size: 170%;
+    font-size: 2rem;
     line-height: 1.4;
     font-style: italic;
     padding-top: 1rem;
@@ -117,6 +132,7 @@ margin: 0 0.625rem;
 .inicio__fila{
     display: flex;
     justify-content: center;
+    margin-top: 20px;
 }
 .inicio__fila__img{
     width: 31.25rem;
@@ -126,14 +142,30 @@ margin: 0 0.625rem;
 /* DESTINOS */
 .destinos__lugares p{
     line-height: 30px;
-    width: 85%;
+    width: 100%;
+    text-align: justify;
 }
 .destinos__h2{
     margin-top: 40px;
     letter-spacing: 2px;
+    text-align: center;
+}
+h3{
+    margin-top: 20px;
 }
 .destinos{
-    margin-left: 20px;
+    padding-left: 40px;
+}
+.carousel__size{
+    width: 600px;
+    height: 600px;
+}
+.carousel__position{
+    display: flex;
+    justify-content: center;
+}
+.carousel-item img{
+    z-index: -1;
 }
 
 /*GALERIA*/

@@ -1,14 +1,55 @@
 .footer{
     background-color: $color-footer;
-    div{
-        padding: 0.3125rem;
+    height: auto;
+    &__social{
+        a{
+            color: white;
+            padding:0.3125rem;
+            &:hover{
+                color: #fc673a;
+            }
+        }
+    }
+    &__info{
+        h4{
+            font-size: 60px;
+            color: whitesmoke;
+            font-family:$font-hyf;
+        }
+        p{
+            font-size: 1rem;
+        }
+    }
+    &__container{
+        padding-top: 1.875rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    &__copyright{
+        p{
+            color: #fc673a;
+            font-size: 120%;
+        }
+    }
+    &__noticias{
+        h4{
+            color: whitesmoke;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        p{
+            a{
+            &:hover{
+                color:$color-detalle;
+            }
+            }
+        }
     }
 }
-.social{
-    color: white;
-}
-.footer__copyright{
-    p{
-        color: $color-pytd;
+@media screen and (max-width:992px){
+    .footer{
+        &__container{
+    padding: 1.25rem;
+        }
     }
 }

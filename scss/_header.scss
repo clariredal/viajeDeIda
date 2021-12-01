@@ -1,22 +1,47 @@
-.navbar{
+.header{
+    &__contenedor{
+        &__menu__item{
+            background-color: $color-header;
+            padding-left: 0.625rem;
+        }
+        &__logo{
+        @include sizes(5rem,5rem);
+        }
+    }
+    &__p{
+        width: 100%;
+        background: url(../multimedia/pexels-sesinando-3158519-min.jpg);
+        height: 37.5rem;
+        background-size: cover;
+        background-position: start center;
+        p{
+        font-family: 'Lobster', cursive;
+        color: rgb(230, 191, 21);
+        padding-top: 20%;
+        font-size: 6.25rem;
+        text-align: center;
+        letter-spacing: 4px;
+        text-shadow: 2px 2px black;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        }
+    }
+    &__navbar{
     background-color: $color-header;
-    height: 23vh;
+    height: 16vh;
     width: 100%;
     font-size: 150%;
     padding: 0% 0.625rem;
+    position: fixed;
+    z-index: 1;
+    }
 }
+@media screen and (max-width:440px){
 
-.header{
-    width:100%;
-    &__contenedor{
-        &__logo{
-            @include sizes(4.375rem,4.375rem);
-        }
-        &__menu{
-            &__item{
-                background-color: $color-header;
-                padding-left: 0.625rem;
-            }
+    .header{
+        &__p{
+    display: none;
         }
     }
 }

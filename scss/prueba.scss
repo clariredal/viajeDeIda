@@ -6,8 +6,7 @@
 html{
     font-size: 62,5%;
 }
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap');
+
     @import "variables";
     @import "body";
     @import "header";
@@ -15,7 +14,7 @@ html{
     @import "footer";
     @import "index";
     @import "destinos";
-    @import "galeria";
+    @import "info";
     @import "tips";
     @import "contacto";
     

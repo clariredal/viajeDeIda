@@ -17,7 +17,7 @@ COLORh1       #D9AA52
 COLORp        #8c013e
 COLORheaderp  rgb(230, 191, 21)
 COLORh2       #845460 
-COLORbotones          #013b52
+COLORbotones  #013b52
 */
 
 
@@ -48,9 +48,6 @@ COLORbotones          #013b52
     background-position: start center;
 
 }
-.tips__fontstyle{
-    font-style: italic;
-}
 
 .header__p p{
     font-family: 'Lobster', cursive;
@@ -72,27 +69,25 @@ p{
     color: #8c013e;
 }
 body{
-    /* position: relative; */
     font-style: bold;
 }
 
 /* main */
 h1{
     color: #D9AA52;
-    font-size: 3.75rem;
+    font-size: 2.5rem;
     letter-spacing: 2px;
     text-transform: uppercase;
+    padding-top: 10px;
 }
-.label__h1{
-max-width: 100%;
-}
+
 h2{
     color:#845460;
-    font-size: 2.5rem;
-    font-style: italic;
+    font-size: 2rem;
+    font-style: bold;
 }
 main{
-    padding: 6.25rem 2.5rem;
+    padding: 6.25rem 2rem;
     height: auto;
     background-color: #F2F2F2;
     font-family: 'Oswald', sans-serif;
@@ -132,7 +127,9 @@ height: auto;
     color: whitesmoke;
     font-family: 'Courier New', Courier, monospace;
 }
-
+.footer__noticias p a:hover{
+    color:#d4ad42;
+}
 
 
 /* ESTILO PAGINAS */
@@ -179,23 +176,22 @@ padding-top: 0.0625rem;
 }
 h3{
     margin-top: 20px;
+    color: rgb(122, 107, 41);
 }
-.destinos{
-    padding-left: 40px;
-}
+
 .carousel__size{
-    width: 700px;
     height: 500px;
+    width: 700px;
 }
 .carousel__position{
     display: flex;
     justify-content: center;
 }
-.carousel-item img{
+.carousel__item img{
     height: 500px;
     width: 700px;
 }
-.carousel-caption p{
+.carousel__pie p{
     text-align: center;
     color: rgb(250, 205, 6);
     background-color: black;
@@ -212,7 +208,7 @@ h3{
     justify-content: center;
 }
 
-.card{
+.info__card{
     display: flex;
     justify-content: center;
     width: 20rem;
@@ -221,30 +217,28 @@ h3{
     padding-left: 0;
     margin: 10px;
 }
-.card:hover{
+.info__card:hover{
     opacity: 0.9;
 }
-.btn-primary{
+.info__btn{
     background: #013b52;
 }
-.card-body{
+.info__card__body{
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #d4ad42;
 }
-.card-text{
+.info__card__body p{
     text-align: center;
 }
-.card-title{
+.info__card__body h5{
     font-size: 30px;
+    color: black;
 }
-.card img{
+.info__card img{
     width: auto;
     height: 295px;
-}
-.card__bottom__style{
-    padding-top: 10px;
 }
 
 /*TIPS*/
@@ -260,6 +254,9 @@ h3{
     border-radius: 5%;
     margin: 0.3125rem;
     padding: 0.625rem;
+}
+.tips__section__div h2{
+    font-style: italic;
 }
 .tips__section__div p{
     line-height: 25px;
@@ -369,26 +366,31 @@ padding:0.4375rem;
 /* MEDIA QUERIES */
 @media screen and (max-width:440px){
 form{
-    width: 100%;
-}
-.label__h1 h1{
-    padding-top: 10px;
-    font-size: 140%;
+    width: auto;
 }
 .header__p{
 display: none;
 }
+.carousel__item img{
+    height: 300px;
+}
+.carousel__size{
+    height: 300px;
+}
+.info__card:hover{
+    display: none;
+}
+}
 
-
-@media screen and (max-width:992px) {
-.inicio__col__introduccion{
-    margin-top: 1.25rem;
-    width:100%;
-}
-.inicio__col img{
-    width: 100%;
-}
-.footer__container{
-padding: 20px;
-}
+@media screen and (max-width:992px){
+    .inicio__col__introduccion{
+        margin-top: 1.25rem;
+        width:100%;
+    }
+    .inicio__col img{
+        width: 100%;
+    }
+    .footer__container{
+    padding: 20px;
+    }
 }

@@ -1,15 +1,19 @@
 h1{
     color: $color-h1;
-    font-size: 250%;
-    letter-spacing: 0,125rem;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
     text-transform: uppercase;
+    padding-top: 10px;
 }
+
 h2{
     color: $color-h2;
-    font-size: 170%;
+    font-size: 2rem;
+    font-style: bold;
 }
 main{
-    padding: 6.25rem 2.5rem;
+    padding: 6.25rem 2rem;
     height: auto;
     background-color: $color-main;
+    font-family: $font-body;
 }

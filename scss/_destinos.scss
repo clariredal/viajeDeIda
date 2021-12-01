@@ -1,8 +1,51 @@
-.destinos__table{
-    padding: 1.25rem;
-    font-size: 120%;
+.destinos{
+    &__lugares{
+        p{
+            line-height: 1.875rem;
+            width: 100%;
+            text-align: justify;
+        }
+    }
+    &__h2{
+    margin-top: 2.5rem;
+    letter-spacing: 2px;
+    text-align: center;
+    }
 }
-td{
-    color: $color-pytd;
-    font-size: 120%;
+h3{
+    margin-top: 1.25rem;
+    color: rgb(122, 107, 41);
+}
+.carousel{
+    &__size{
+        @include sizes(43.75rem, 31.25rem)
+    }
+    &__position{
+        display: flex;
+        justify-content: center;
+    }
+    &__item{
+        img{
+            @include sizes(43.75rem, 31.25rem)
+        }
+    }
+    &__pie{
+        p{
+        text-align: center;
+        color: $color-detalle;
+        background-color: black;
+        }
+    }
+}
+@media screen and (max-width:440px){
+    .carousel{
+        &__item {
+            img{
+            height: 18.75rem;
+        }
+    }
+    &__size{
+        height: 18.75rem;
+    }
+}
 }

@@ -200,6 +200,9 @@ h3 {
 .info__row {
   justify-content: center; }
 
+.info__btn {
+  background: #013b52; }
+
 @media screen and (max-width: 440px) {
   .info__card:hover {
     display: none; } }
